@@ -6,11 +6,10 @@ from datetime import datetime
 
 def apiLoc():
     #/iss-now.json
-    #response = app.response_class(response=json.dumps(globalJson),status=200,mimetype='application/json')
+
     URL = "http://api.open-notify.org/iss-now.json"
     r = requests.get(URL)
     data = r.json() 
-    #debug: print response data #print(data)
     if(data['message']=='success'):
         #print("Successful request")
         parsedTime=parseTime(data['timestamp'])
@@ -23,7 +22,6 @@ def apiPeople():
     URL="http://api.open-notify.org/astros.json"
     r = requests.get(URL)
     data = r.json() 
-    #debug: print response data #print(data)
     if(data['message']=='success'):
         #print("Successful request")
         num=0
@@ -56,7 +54,6 @@ def apiPass(lat,long):
     #/iss-pass.json?lat=45.0&lon=-122.3
     #curTime=datetime.now().timestamp()
 
-    
     URL = "http://api.open-notify.org/iss-pass.json?lat=%s&lon=%s&n=1"%(lat,long) #add n=1, only want next pass
 
     r = requests.get(URL)
