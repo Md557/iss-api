@@ -1,9 +1,8 @@
-'''
-Task
+##Summary
 Implement a Python script that will accept the following command line arguments, along with any required information, and print the expected results
 ·         loc
-o    print the current location of the ISS
-o    Example: “The ISS current location at {time} is {LAT, LONG}”
+    print the current location of the ISS
+    Example: “The ISS current location at {time} is {LAT, LONG}”
 ·         pass
 o    print the passing details of the ISS for a given location
 o    Example: “The ISS will be overhead {LAT, LONG} at {time} for {duration}”
@@ -12,7 +11,7 @@ o    for each craft print the details of those people that are currently in spac
 o    Example: “There are {number} people aboard the {craft}. They are {name[0]}…{name[n]}”
 
 
-API_DEFS = [ # From https://github.com/open-notify/Open-Notify-API/blob/master/app.py
+###API_DEFS = [ # From https://github.com/open-notify/Open-Notify-API/blob/master/app.py
     {
         "title": "ISS Location Now",
         "link": "/iss-now.json",
@@ -32,4 +31,3 @@ API_DEFS = [ # From https://github.com/open-notify/Open-Notify-API/blob/master/a
         "doclink": "http://open-notify.org/Open-Notify-API/People-In-Space",
         "docname": "People-In-Space"},
 ]
-'''
