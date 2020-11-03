@@ -1,5 +1,8 @@
 ## Summary
 A Python script that will accept the following command line arguments, along with any required information, and print the expected results
+## Usage
+```python main.py [command] (where command is pass [lat,long], people, loc)```
+
 ###         loc
     print the current location of the ISS
     Example: “The ISS current location at {time} is {LAT, LONG}”
