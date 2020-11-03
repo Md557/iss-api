@@ -82,11 +82,11 @@ if __name__ == "__main__":
      
     '''
 
-
-    try:
-        arg1=sys.argv[1]
-    except:
+    lenArgs=len(sys.argv)
+    if lenArgs<2:
         print("couldn't read first argument, usage: python main.py [command] (where command is pass [lat,long], people, loc)")
+        exit()
+    arg1=sys.argv[1]
         
     if (arg1=='loc'):
         print("location selected")
