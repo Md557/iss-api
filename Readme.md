@@ -1,4 +1,4 @@
-##Summary
+## Summary
 Implement a Python script that will accept the following command line arguments, along with any required information, and print the expected results
 ·         loc
     print the current location of the ISS
@@ -11,7 +11,7 @@ o    for each craft print the details of those people that are currently in spac
 o    Example: “There are {number} people aboard the {craft}. They are {name[0]}…{name[n]}”
 
 
-###API_DEFS = [ # From https://github.com/open-notify/Open-Notify-API/blob/master/app.py
+### API_DEFS = [ # From https://github.com/open-notify/Open-Notify-API/blob/master/app.py
     {
         "title": "ISS Location Now",
         "link": "/iss-now.json",
