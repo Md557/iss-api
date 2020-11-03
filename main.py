@@ -24,13 +24,10 @@ def apiPeople():
     data = r.json() 
     if(data['message']=='success'):
         #print("Successful request")
-        num=0
-        skip=0
+        num=skip=0
         peopleDict=data['people']
         numExp=data['number']
-
         craftExp='ISS'
-
         namesStr=''
         ######### shorter way if not checking craft:
         #  nameList=[people['name']  for i in peopleDict]
@@ -102,10 +99,12 @@ if __name__ == "__main__":
                 apiPass(lat,long)                
             else:
                 print("Invalid lat or long range entered (-90<=lat<=90) and (-180<=long<=180)")
+                exit()
 
             
-        except:
+        except IndexError:
             print("Error parsing lat and long, pass usage (without brackets): main.py pass [lat] [long]")
+            exit()
     elif (arg1=='people'):
         print("people selected")
         #call api
