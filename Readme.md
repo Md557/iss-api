@@ -21,17 +21,20 @@ A Python script that will accept the following command line arguments, along wit
         "link": "/iss-now.json",
         "desc": "Current ISS location over Earth (latitude/longitude)",
         "doclink": "http://open-notify.org/Open-Notify-API/ISS-Location-Now",
-        "docname": "ISS-Location-Now"},
+        "docname": "ISS-Location-Now"
+    },
     {
         "title": "ISS Pass Times",
         "link": "/iss-pass.json?lat=45.0&lon=-122.3",
         "desc": "Predictions when the space station will fly over a particular location",
         "doclink": "http://open-notify.org/Open-Notify-API/ISS-Pass-Times",
-        "docname": "ISS-Pass-Times"},
+        "docname": "ISS-Pass-Times"
+    },
     {
         "title": "People in Space Right Now",
         "link": "/astros.json",
         "desc": "The number of people in space at this moment. List of names when known.",
         "doclink": "http://open-notify.org/Open-Notify-API/People-In-Space",
-        "docname": "People-In-Space"},
+        "docname": "People-In-Space"
+    }
 
